@@ -1,0 +1,49 @@
+<% include partials/head %>
+
+    <hr>
+    <div class="jumbotron">
+        <header div="blog-header">
+            <h1 class="blog-title">Becky White's Blog</h1>
+            <p class="lead blog-description">a full time wife, and mother, and a part-time student of Code. This is about my journey from begining to learn
+                code, toward becoming employable sometime in the future.
+            </p>
+        </header>
+    </div>
+    <hr>
+
+    <div>
+        <a href="/newpost">Create a new post</a>
+    </div>
+
+    <section class="blogposts">
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 blog-main">
+                        <% for (var i =0; i < posts.length; i++) {%>
+                            <article>
+                                <div class="blog-post">
+                                    <h2 class="blog-post-title">
+                                        <%= posts[i].title %>
+                                    </h2>
+                                    <div class="blog-post-meta">
+                                        <%= posts[i].pubDate %> by
+                                            <%= posts[i].author.firstName %>
+                                    </div>
+
+                                    <div>
+                                        <%= posts[i].content %>
+                                    </div>
+                                </div>
+
+                            </article>
+                            <% } %>
+                    </div>
+
+                    <% include partials/aside %>
+    </section>
+
+    <hr>
+    
+        <% include partials/footer%>

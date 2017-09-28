@@ -1,0 +1,19 @@
+{
+  "name": "express-furryblog",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body": "^5.1.0",
+    "body-parser": "^1.18.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "^2.5.7",
+    "express": "~4.15.2",
+    "morgan": "^1.8.2",
+    "parser": "^0.1.4",
+    "serve-favicon": "^2.4.4"
+  }
+}

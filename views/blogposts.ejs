@@ -1,0 +1,35 @@
+<% include partials/head %>
+    <main>
+        <br>
+        <section class="blogposts">
+
+            <main>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 blog-main">
+                            <% for (var i =0; i < posts.length; i++) {%>
+                                <article>
+                                    <div class="blog-post">
+                                        <h2 class="blog-post-title">
+                                            <%= posts[i].title %>
+                                        </h2>
+                                        <div class="blog-post-meta">
+                                            <%= posts[i].pubDate %> by
+                                                <%= posts[i].author.firstName %>
+                                        </div>
+
+                                        <div>
+                                            <%= posts[i].content %>
+                                        </div>
+                                    </div>
+
+                                </article>
+                                <% } %>
+                        </div>
+
+                        <% include partials/aside %>
+        </section>
+
+        <hr>
+        
+            <% include partials/footer %>

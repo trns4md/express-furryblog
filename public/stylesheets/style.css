@@ -1,0 +1,67 @@
+
+body{
+  background-color:#FFFEBD;
+  font-family: Courier;
+}
+ul {
+  background-color:darkred;
+}
+li a {
+  color: white;
+} 
+}
+h1{
+  color:darkslategray;
+}
+#maria{
+  width: 400px;
+  
+}
+p{
+  text-align: left;
+  padding: 1.5rem;
+}
+h2{
+  color:darkslategray;
+}
+article{
+  border: 6px solid black;
+  margin: auto;
+
+}
+#first{
+  color: white;
+  background-color: darkred;
+
+}
+#second{
+  color: white;
+  background-color: darkred;
+  text-align: center;
+}
+h3{
+  color:white;
+  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer{
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.jumbotron{
+  background-color:black;
+  color: white;
+}
+.blog-pagination{
+  margin: 1.5rem;
+}
+.blog-post-title{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: initial;
+}
+.blog-post{
+  margin: 1.5rem;
+  padding: 2 rem;
+}
